@@ -71,3 +71,18 @@ Y para que se convierta en una tabla real se necesita ejecutar el comando:
 Es el que contiene todos los metodos de consulta.
 
 El mismo se encuentra en Repository/EntityNameRepository
+
+## Formularios
+
+Para trabajar con formularios necesitamos ejecutar el siguiente comando:
+
+`composer require symfony/form`
+
+Para crear un nuevo formulario ejecutar el comando:
+
+`php bin/console make:form`
+
+1. Te pedirá el nombre de la clase del formulario.
+2. Te pedirá con que entidad trabjará.
+
+Creará un nuevo formulario en src/Form
