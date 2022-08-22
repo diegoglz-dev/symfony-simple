@@ -86,3 +86,13 @@ Para crear un nuevo formulario ejecutar el comando:
 2. Te pedirá con que entidad trabjará.
 
 Creará un nuevo formulario en src/Form
+
+## Validador
+
+Para trabajar con el validador, se require instalar un paquete con el siguiente comando:
+
+`composer require symfony/validator`
+
+Luego en la entidad, importar al sistema que acabamos de instalar:
+
+`use Symfony\Component\Validator\Constraints as Assert;`
