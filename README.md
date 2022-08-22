@@ -53,3 +53,21 @@ Una entidad es una representación en código PHP de una tabla de nuestra base d
 Se preciona enter y se sigue los distintos mensajes de guia.
 
 Y se guardan en src/Entity
+
+## Migraciones
+
+Es la estructura inicial que se convertira en una tabla de la base de datos. Permite trabajar como si fuera un sistema de control de versiones de nuestra DB.
+
+Para crear una nueva migración ejecutar el comando:
+`php bin/console make:migration`
+
+Esto crea un nuevo archivo en la carpeta migrations que tiene todo el código necesario para construir la tabla y la creará a partir de lo que tiene en nuestra entidad.
+
+Y para que se convierta en una tabla real se necesita ejecutar el comando:
+`php bin/console doctrine:migrations:migrate`
+
+### Repositorio
+
+Es el que contiene todos los metodos de consulta.
+
+El mismo se encuentra en Repository/EntityNameRepository
