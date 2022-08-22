@@ -15,7 +15,8 @@ class PageController extends AbstractController
     public function home(Request $request): Response
     {
         $search = $request->get('search');
-        //return new Response('Welcome, page home');
+        // dd($search);
+        // return new Response('Welcome, page home');
         return $this->render('home.html.twig', ['search' => $search]);
     }
 }

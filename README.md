@@ -20,3 +20,9 @@ Ejecutar el comando
 En la terminal se debe ejecutar el siguiente comando:
 
 `composer require symfony/twig-pack`
+
+### Instalando herramienta debug
+
+En la terminal se debe ejecutar el siguiente comando:
+
+`composer require symfony/debug-pack`
