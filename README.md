@@ -122,3 +122,13 @@ Luego para crear los archivos correspondientes al front en la carpeta public. Se
 Se crea una carpeta build en public con los archivos finales.
 
 Se utilizan de forma automatica los estilos, porque en la plantilla base base.html.twig se encuentra la linea `{{ encore_entry_link_tags('app') }}`
+
+### Instalando markdown
+
+Necesitamos el siguiente paquete
+
+`composer require twig/markdown-extra` y `composer require league/commonmark`
+
+Luego en config/packages/twig.yaml podemos hacer la siguiente configuración:
+
+`form_themes: ["bootstrap_5_layout.html.twig"]`
