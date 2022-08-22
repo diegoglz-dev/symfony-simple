@@ -96,3 +96,29 @@ Para trabajar con el validador, se require instalar un paquete con el siguiente 
 Luego en la entidad, importar al sistema que acabamos de instalar:
 
 `use Symfony\Component\Validator\Constraints as Assert;`
+
+## Front-end
+
+Para trabajar con el front-end de nuestra aplicación, vamos a necesitar el siguiente paquete:
+
+`composer require symfony/webpack-encore-bundle`
+
+Y de manera automatica crea la carpeta assets correspondiente a los archivos de diseño.
+
+Luego ejecutar el comando `npm install` para instalar todo lo necesario
+
+### Instalando Bootstrap
+
+Ejecutamos el siguiente comando:
+
+`npm install bootstrap --save-dev`
+
+En el archivo package.json se inserta la linea que instala bootstrap
+
+En assets/styles/app.css agregar `@import 'bootstrap';`
+
+Luego para crear los archivos correspondientes al front en la carpeta public. Se necesita correr el comando `npm run dev`.
+
+Se crea una carpeta build en public con los archivos finales.
+
+Se utilizan de forma automatica los estilos, porque en la plantilla base base.html.twig se encuentra la linea `{{ encore_entry_link_tags('app') }}`
