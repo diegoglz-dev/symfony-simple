@@ -26,3 +26,15 @@ En la terminal se debe ejecutar el siguiente comando:
 En la terminal se debe ejecutar el siguiente comando:
 
 `composer require symfony/debug-pack`
+
+### Trabajando con la base de datos
+
+Para poder trabajar con la base de datos, necesitamos ejecutar el siguiente comando:
+
+`composer require symfony/orm-pack`
+
+Y al final del archivo `.env` tenemos toda la configuración necesaria para la conexión a la base de datos.
+
+Una vez configurado el .env ejecutar el siguiente comando:
+
+`php bin/console doctrine:database:create`
